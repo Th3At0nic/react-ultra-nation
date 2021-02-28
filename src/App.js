@@ -17,14 +17,15 @@ function App() {
   return (
     <div className="App">
       <h1> Loaded countries: {countries.length} </h1>
-      {countries.map((country) => (
-        <Country name={country}></Country>
-      ))}
-      {/* <header className="App-header">
+      <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code> src / App.js </code> and save to reload.{" "}
         </p>{" "}
+        <p>this is  dkfjkdfjkdjfkdjf</p>
+        {countries.map((country) => (
+          <Country name={country.name}></Country>
+        ))}
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -33,7 +34,7 @@ function App() {
         >
           Learn React{" "}
         </a>{" "}
-      </header>{" "} */}
+      </header>{" "}
     </div>
   );
 }
