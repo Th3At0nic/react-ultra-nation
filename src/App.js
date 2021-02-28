@@ -9,9 +9,9 @@ function App() {
   useEffect(() => {
     fetch("https://restcountries.eu/rest/v2/all")
       .then((res) => res.json())
-      .then((data) => setCountries(data))
-      // .then((data) => console.log(data))
-      // .catch((error) => console.log(error));
+      .then((data) => setCountries(data));
+    // .then((data) => console.log(data));
+    // .catch((error) => console.log(error));
   }, []);
 
   return (
@@ -20,7 +20,7 @@ function App() {
       {countries.map((country) => (
         <Country name={country}></Country>
       ))}
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code> src / App.js </code> and save to reload.{" "}
@@ -33,7 +33,7 @@ function App() {
         >
           Learn React{" "}
         </a>{" "}
-      </header>{" "}
+      </header>{" "} */}
     </div>
   );
 }
